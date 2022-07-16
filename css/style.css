@@ -9,12 +9,14 @@
     --color-headings: #2F3237;
     --color-border: #e2e2e2;
     --color-white: white;
-    --section-padding: 80px 0px;
+    --section-padding: 100px 0px;
 }
 
 /* Estilo del documento*/
 * {
     box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 
 html {font-size: 100%;} /*16px*/
@@ -94,6 +96,20 @@ small, .text_small {font-size: 0.8rem;}
 
 /* Clases de ayuda */
 
+.text-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3c9cc9;
+    letter-spacing: 1.0px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.text-link:hover {
+    color: #42b0e2;
+}
+
 .space-bottom-1x {
     margin-bottom: 10px;
 }
@@ -162,15 +178,16 @@ small, .text_small {font-size: 0.8rem;}
 
 .hero {
     display: flex;
-    height: 90vh;
-    background: url(/images/hero-bg.jpg);
+    padding: 40px 0px;
+/*     background: url(/images/hero-bg.jpg);
     background-size: auto,cover;
-    background-position: 60% 10%;
+    background-position: 60% 10%; */
     border-bottom: 1px solid #e2e2e2;
 }
 
 .hero__row {
     display: flex;
+    align-items: center;    
 }
 
 .hero__column {
@@ -179,6 +196,54 @@ small, .text_small {font-size: 0.8rem;}
 
 /* Sección caracteristicas */
 
-.features {
+.facts {
     padding: var(--section-padding);
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.facts__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.facts__heading {
+    text-align: center;
+}
+
+.facts__row {
+    display: flex;
+}
+
+.facts__column {
+    padding: 20px;
+    text-align: center;
+}
+
+.facts_span {
+    font-size: 3.052rem;
+    font-weight: 700;
+    color: var(--color-secundary);
+}
+
+/* Sección acerca de */
+
+.about {
+    padding: var(--section-padding);
+}
+
+.about__row {
+    display: flex;
+}
+
+.about__column {
+    width: 50%;
+}
+
+.about__column:nth-child(1) {
+    padding-right: 40px;
+}
+
+.about__column:nth-child(2) {
+    padding-left: 40px;
 }
