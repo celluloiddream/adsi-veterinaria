@@ -24,6 +24,7 @@ html {font-size: 100%;} /*16px*/
 body {
     background: white;
     font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
     font-weight: 400;
     line-height: 1.75;
     color: #2F3237;
@@ -293,7 +294,9 @@ small, .text_small {font-size: 0.8rem;}
 /* Sección servicios */
 
 .services {
+    background-color: #f9f9f9;
     padding: var(--section-padding);
+    border-bottom: 1px solid #e2e2e2;
 }
 
 .services__row {
@@ -311,4 +314,66 @@ small, .text_small {font-size: 0.8rem;}
 
 .services__column:nth-child(2) {
     padding-left: 40px;
+}
+
+/* Pie de página */
+
+.footer {
+    padding: 40px 0px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.footer__column {
+    width: 25%;
+    padding: 40px;
+}
+
+.footer__heading {
+    color: #2F3237;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer__ul {
+    list-style: none;
+}
+
+.footer__li {
+    margin-bottom: 3px;
+}
+
+.footer__a {
+    transition: all 0.4s;
+    text-decoration: none;
+    color: #2F3237;
+    font-weight: 700;
+}
+
+.footer__a:hover {
+    color: #a3d256;
+}
+
+/* Creditos */
+
+.credits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.footer__logo {
+    margin-bottom: 10px;
 }
